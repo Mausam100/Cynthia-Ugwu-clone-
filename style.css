@@ -1,15 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
-     width: 100%;
-     height: 100%;
-     background-color: black;
-     color: white;
+
+html,
+body {
+    width: 100%;
+    height:100%;
+    background-color: black;
 }
-#minicircle{
+
+#minicircle {
     transition: cubic-bezier(0.19, 1, 0.22, 1).8s;
     width: 12px;
     height: 12px;
@@ -17,49 +19,58 @@ html,body{
     z-index: 999999999;
     border-radius: 50%;
     background-color: white;
-    
-    
+
+
 }
-.bounding{
+
+.bounding {
     width: fit-content;
     overflow: hidden;
-    
+
 }
-.bounding .boundingelem{
+
+.bounding .boundingelem {
     transform: translateY(100%);
 }
-#main{
-    width: 100%;
+
+#main {
+    min-width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
-    
+    background-color: black;
+    color: white;
 }
-#hero{
-    width: 100%;
-    height: 100vh;
-    
+
+#hero {
+    width: inherit;
+    min-height: 100vh;
+
 }
-nav{
-    width: 100%;
+
+nav {
+    
+    width: inherit;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:20px 40px ;
-    
+    padding: 20px 40px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-nav a{
+
+nav a {
     margin-top: 10px;
     color: white;
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
 }
-#heading{
+
+#heading {
     margin-top: 85px;
-    
+
 }
-#heading h1{
+
+#heading h1 {
     margin-left: 30px;
     line-height: .9;
     opacity: .6;
@@ -67,21 +78,24 @@ nav a{
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: 500;
-    
+
 
 }
-#heading #second{
+
+#heading #second {
     margin-left: 180px;
 }
-#blocktext{
+
+#blocktext {
     display: flex;
     flex-direction: column;
     align-items: end;
-    
+
     width: fit-content;
 }
-#blocktext h5{
-    
+
+#blocktext h5 {
+
     text-align: right;
     text-transform: uppercase;
     font-size: 17px;
@@ -89,30 +103,32 @@ nav a{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
-#chhotiheading{
+
+#chhotiheading {
     display: flex;
     flex-direction: column;
     align-items: end;
     margin-top: 100px;
     padding-right: 30px;
-    
+
 }
-#chhotiheading h5{
+
+#chhotiheading h5 {
     text-transform: uppercase;
     margin-top: .5vw;
     font-size: 1.2vw;
     line-height: 2;
     text-align: right;
 }
-#herofooter{
+
+#herofooter {
     padding: .10vh 2vw;
-    width: 100%;
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#herofooter #circle{
+
+#herofooter #circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,118 +137,137 @@ nav a{
     border-radius: 50%;
     background-color: #888;
 }
-#herofooter #icon{
+
+#herofooter #icon {
     display: flex;
     gap: 5px;
 }
 
-#herofooter a{
+#herofooter a {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
 }
-#secondpage{
+
+#secondpage {
     padding-right: 10vw;
     padding-left: 2vw;
     padding-top: 200px;
-    width: 100%;
-    height: 100vh;
+    width: inherit;
+
 }
-.elem{
+
+.elem {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    padding: 2vw 1vw ;
+    width: inherit;
+    padding: 2vw 1vw;
     padding-right: 0;
     border-top: 1px solid #888;
 }
-.elem h1{
-    padding:5vh ;
+
+.elem h1 {
+    padding: 5vh;
     text-transform: uppercase;
     font-size: 7vw;
     opacity: .7;
     font-weight: 300;
 }
-.last{
 
-     border-bottom: 1px solid #888;
+.last {
+
+    border-bottom: 1px solid #888;
 }
-.elem img{
+
+.elem img {
     position: absolute;
     z-index: 9;
-    height:140%;
+    height: 140%;
     opacity: 0;
     overflow: hidden;
-    
+
 }
-#about{
+
+#about {
     margin-top: 60vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    width: 100%;
+    min-width: 100vw;
     padding: 10vw 10vw;
     padding-left: 30vw;
 }
-#textabout{
+
+#textabout {
     width: 30rem;
 
 
 }
-#textabout h5{
+
+#textabout h5 {
     text-transform: uppercase;
     opacity: .6;
     margin-bottom: 10px;
-    
+
 }
-#textabout p{
+
+#textabout p {
     line-height: 1.7;
     margin-bottom: 30px;
 }
-#about img{
+
+#about img {
     width: 250px;
-    
+
 }
-#textabout a{
+
+#textabout a {
     padding: 12px 22px;
-    border:2px solid #888;
+    border: 2px solid #888;
     border-radius: 100px;
     color: white;
     text-decoration: none;
-    
+
 }
-#subscribe{
+
+#subscribe {
     padding: 20px 30px;
     padding-bottom: 7vw;
 
 }
-#subscribe h5{
+
+#subscribe h5 {
     text-transform: uppercase;
     opacity: .6;
 }
-#subscribe h3{
+
+#subscribe h3 {
     text-transform: uppercase;
     font-size: 14px;
     margin-top: 10px;
 }
-footer{
+
+footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 30px;
 }
-footer #footerleft{
+
+footer #footerleft {
     display: flex;
     gap: 20px;
 }
-footer #footerright{
+
+footer #footerright {
     display: flex;
     gap: 20px;
 }
-footer a{
+
+footer a {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
@@ -240,4 +275,267 @@ footer a{
     color: white;
 }
 
-
+ @media screen and (max-width: 720px) { 
+    #minicircle{
+        display: none;
+    }
+    #hero {
+      min-height: auto;
+      
+    }
+  
+    nav {
+        
+        justify-content:space-between;
+    }
+  
+   nav a{
+    margin-top: 10px;
+   }
+   
+  #heading{
+    margin-top: 150px;
+  }
+    #heading h1 {
+      font-size: 15vw;
+      margin-left: 10px;
+      
+      
+    }
+  
+    #heading #second {
+      margin-left: 50px;
+      
+    }
+  
+    #blocktext {
+      align-items: flex-end;
+    }
+  
+    #blocktext h5 {
+      font-size: 12px;
+    }
+  
+    #chhotiheading {
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 80px;
+    }
+  
+    #chhotiheading h5 {
+      text-align: flex-end;
+      margin-top: 3px;
+      font-size: 3vw;
+    }
+  
+    #herofooter {
+        
+      margin-top: 150px;  
+      flex-direction: flex;
+      text-align: center;
+      justify-content: space-between;
+    }
+    #herofooter #icon{
+        display: none;
+    }
+  
+    #secondpage {
+      margin-top: 20vh;
+      padding: 15px;
+      height: auto;
+    }
+    #secondpage .elem img{
+        display: none;
+    }
+  
+    .elem h1 {
+      font-size: 10vw;
+      font-weight: 800;
+    }
+  
+    .elem h5 {
+      font-size: 2.5vw;
+    }
+  
+    #about {
+      margin-top: 100px;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+      min-width: auto;
+      padding: 20px;
+      padding-left: 20px;
+    }
+  
+    #textabout {
+      width: 100%;
+      
+    }
+  
+    #textabout h5 {
+      
+      margin-bottom: 10px;
+    }
+  
+    #about img {
+      width: 250px;
+    }
+  
+    #textabout a {
+      padding: 12px 22px;
+    }
+  
+    #subscribe {
+      padding: 20px;
+      padding-bottom: 20px;
+    }
+  
+    #subscribe h5 {
+      
+      margin-bottom: 20px;
+    }
+  
+    #subscribe h3 {
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+  
+    footer {
+        margin-top: 100px;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px; 
+  }
+}   
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+    #minicircle{
+        display: none;
+    }
+    #hero {
+      min-height: auto;
+      
+    }
+  
+    nav {
+        
+        justify-content:space-between;
+    }
+  
+   nav a{
+    margin-top: 10px;
+   }
+   
+  #heading{
+    margin-top: 150px;
+  }
+    #heading h1 {
+      font-size: 15vw;
+      margin-left: 10px;
+      
+      
+    }
+  
+    #heading #second {
+      margin-left: 50px;
+      
+    }
+  
+    #blocktext {
+      align-items: flex-end;
+    }
+  
+    #blocktext h5 {
+      font-size: 12px;
+    }
+  
+    #chhotiheading {
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 80px;
+    }
+  
+    #chhotiheading h5 {
+      text-align: flex-end;
+      margin-top: 3px;
+      font-size: 3vw;
+    }
+  
+    #herofooter {
+        
+      margin-top: 150px;  
+      flex-direction: flex;
+      text-align: center;
+      justify-content: space-between;
+    }
+    #herofooter #icon{
+        display: none;
+    }
+  
+    #secondpage {
+      margin-top: 20vh;
+      padding: 15px;
+      height: auto;
+    }
+    #secondpage .elem img{
+        display: none;
+    }
+  
+    .elem h1 {
+      font-size: 5vw;
+      font-weight: 800;
+    }
+  
+    .elem h5 {
+      font-size: 2.5vw;
+    }
+  
+    #about {
+      margin-top: 100px;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+      min-width: auto;
+      padding: 20px;
+      padding-left: 20px;
+    }
+  
+    #textabout {
+      width: 100%;
+      
+    }
+  
+    #textabout h5 {
+      
+      margin-bottom: 10px;
+    }
+  
+    #about img {
+      width: 250px;
+    }
+  
+    #textabout a {
+      padding: 12px 22px;
+    }
+  
+    #subscribe {
+      padding: 20px;
+      padding-bottom: 20px;
+    }
+  
+    #subscribe h5 {
+      
+      margin-bottom: 20px;
+    }
+  
+    #subscribe h3 {
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+  
+    footer {
+        margin-top: 100px;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px; 
+  }
+  }
