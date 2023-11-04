@@ -11,18 +11,6 @@ body {
     background-color: black;
 }
 
-#minicircle {
-    transition: cubic-bezier(0.19, 1, 0.22, 1).8s;
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    z-index: 999999999;
-    border-radius: 50%;
-    background-color: white;
-
-
-}
-
 .bounding {
     width: fit-content;
     overflow: hidden;
@@ -181,14 +169,6 @@ nav a {
     border-bottom: 1px solid #888;
 }
 
-.elem img {
-    position: absolute;
-    z-index: 9;
-    height: 140%;
-    opacity: 0;
-    overflow: hidden;
-
-}
 
 #about {
     margin-top: 60vh;
