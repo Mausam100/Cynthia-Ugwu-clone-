@@ -256,12 +256,8 @@ footer a {
 }
 
  @media screen and (max-width: 720px) { 
-    #minicircle{
-        display: none;
-    }
     #hero {
       min-height: auto;
-      
     }
   
     nav {

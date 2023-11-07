@@ -26,9 +26,13 @@ function firstPageAnim() {
     });
 }
 var timeout;
-Shery.mouseFollower();
-Shery.hoverWithMediaCircle(".elem", { images: ["./plug.png","./ixperience.png","./home.webp"],
+
+if (window.innerWidth >= 768) {
+  Shery.mouseFollower();
+  Shery.hoverWithMediaCircle(".elem", {
+    images: ["./plug.png", "./ixperience.png", "./home.webp"],
   });
+}
 
 // function circleband() {
 //   var xscale = 1;
@@ -64,22 +68,21 @@ Shery.hoverWithMediaCircle(".elem", { images: ["./plug.png","./ixperience.png","
 // }
 // document.querySelectorAll(".elem").forEach(function (elem) {
 //   elem.addEventListener("mouseleave", function (dets) {
-    
-    
+
 //     gsap.to(elem.querySelector("img"), {
 //       opacity: 0,
 //       ease: Power1,
 //       // duration: ,
 //     });
 //   });
-// });  
+// });
 // document.querySelectorAll(".elem").forEach(function (elem){
 //   var rotate = 0;
 //   var diffrot = 0;
 //   elem.addEventListener("mousemove", function (details) {
 //     var diff = details.clientY - elem.getBoundingClientRect().top;
 //     diffrot = details.clientX -rotate;
-//     rotate = details.clientX;  
+//     rotate = details.clientX;
 //     gsap.to(elem.querySelector("img"), {
 //       opacity:2,
 //       ease: Power3,
